@@ -2,7 +2,7 @@
 
 AuthBoard is a modern PHP MVC web application featuring **user authentication**, **post creation**, **likes**, **comments**, and a **profile management system** — all wrapped in a sleek **glassmorphism UI** built with Bootstrap 5.
 
-![AuthBoard Screenshot](assets/preview.png)
+<!--![AuthBoard Screenshot](assets/preview.png)-->
 
 ---
 
