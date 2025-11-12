@@ -1,44 +1,47 @@
-# AuthBoard - Mini PHP Auth Project
+# 🧭 AuthBoard — PHP MVC User Dashboard
 
-PHP version: 8.0+ (tested with PHP 8)
-A small teaching project demonstrating:
-- Registration & Login
-- Sessions
-- Simple Router
-- Namespaces & PSR-4 autoloading (composer)
-- Password hashing (password_hash)
-- Email sending (Mailtrap + PHPMailer)
-- Basic folder structure and simple styling
+AuthBoard is a modern PHP MVC web application featuring **user authentication**, **post creation**, **likes**, **comments**, and a **profile management system** — all wrapped in a sleek **glassmorphism UI** built with Bootstrap 5.
 
-## Requirements
-- PHP 8.0+
-- Composer (for dependencies)
-- MySQL (or MariaDB)
-- Local webserver (XAMPP, Laragon, etc.)
+![AuthBoard Screenshot](assets/preview.png)
 
-## Setup
-1. Unzip the project into your web root (or point your vhost to `AuthBoard/public`).
-2. Copy `.env.example` to `.env` and fill values (DB and Mailtrap credentials).
-3. Create the database and import `sql/schema.sql`.
-   Example:
-   ```sql
-   CREATE DATABASE authboard;
-   USE authboard;
-   -- then import the schema.sql file
-   ```
-4. Install composer dependencies:
-   ```bash
-   composer install
-   ```
-5. Start the server (if using built-in PHP server for testing):
-   ```bash
-   cd public
-   php -S localhost:8000
-   ```
-6. Visit `http://localhost:8000` (or your configured vhost).
+---
 
-## Notes for instructors
-- Students should update `.env` with their Mailtrap sandbox credentials.
-- The project uses a tiny .env loader (no external dotenv package required).
-- Encourage students to read files under `app/` to understand flow.
+## ✨ Features
 
+✅ **User Authentication**
+- Register and login with validation
+- Password hashing for security (BCRYPT)
+- Session-based user management
+
+✅ **Profile Management**
+- Upload and update profile picture
+- Edit name and bio
+- View total likes and personal posts in a grid (3 per row)
+
+✅ **Posts**
+- Create, edit, and delete posts with images
+- Responsive “glass” style layout
+- Shows timestamp and author info
+
+✅ **Likes & Comments**
+- Like/unlike posts with real-time count
+- Comment system (coming soon)
+
+✅ **Dashboard**
+- Feed shows all user posts
+- Create post form at top
+- Responsive and mobile-friendly
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Backend | PHP 8+, PDO, Custom MVC Framework |
+| Frontend | HTML5, CSS3, Bootstrap 5 |
+| Database | MySQL |
+| Styling | Glassmorphism UI |
+| Other | Sessions, Routing, File Uploads |
+
+---
